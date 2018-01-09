@@ -1,0 +1,123 @@
+html{
+  font-size: 16px;
+}
+body{
+  font-family:'Questrial', sans-serif;
+  background-color: Black;
+}
+.site-container{
+  width: 100%;
+  background-color: #8BA2A9;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.header{
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #01252F;
+  z-index: 100;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .7);
+  box-shadow: 4px 1px 8px #888888;
+}
+
+@media only screen and (max-width: 640px) {
+  .header{
+    display: none;
+  }
+  .mobile-header{
+    display: block;
+  }
+
+}
+
+.title{
+  padding: 0 0 0 4px;
+  color: #8BA2A9;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.75rem;
+}
+.head-logo{
+  margin-left: 2rem;
+}
+.desktop-nav ul{
+  display: flex;
+  margin-right: 2rem;
+}
+.desktop-nav li{
+  margin: 0 .5rem;
+}
+.desktop-nav li a{
+  text-decoration: none;
+  color:#8BA2A9;
+  font-size: 1.25rem;
+}
+.desktop-nav li a:hover{
+  cursor: pointer;
+  color: #E3E3E3;
+}
+
+@media only screen and (min-width: 641px){
+  .mobile-header{
+    display: none;
+  }
+
+}
+
+.mobile-header{
+  display: none;
+}
+
+/*-------------- bellow is idea section---------------*/
+.welcome-banner{
+  background-image: url('../../images/welcome-ruffwd.jpeg');
+  width: 100%;
+  height: 35rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.caption{
+  color: white;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.caption h2{
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px rgba(0,0,0,.3);
+}
+.caption p{
+  font-size: 1rem;
+  text-shadow: 2px 2px rgba(0,0,0,.2);
+}
+.dive-in:hover{
+  background-color: #265B6A;
+  color: #E3E3E3;
+}
+.dive-in{
+  display:flex;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  background-color:#8BA2A9;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: 2px 2px rgba(0,0,0,.2);
+}
+/* banner finished*/
