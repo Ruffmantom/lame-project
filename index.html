@@ -3,30 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome</title>
+
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Questrial" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./resources/images/portfolio-favicon.png">
+    <link rel="icon" type="image/png" href="./images/portfolio-favicon.png">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="resources/main.js"></script>
+
+
+
   </head>
 <!-- Developed by Tom Ruff, feel free to check out the code! -->
 
-
-
-
-
   <body>
+
     <div class="site-container">
       <div class="header">
         <div class="head-logo">
-          <span class="title">Thomas Ruff</span>
+          <span class="title">THOMAS RUFF</span>
         </div>
         <nav class="desktop-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">RESUME</a></li>
+            <li><a href="#">HIRE ME</a></li>
           </ul>
         </nav>
       </div>
@@ -44,7 +50,7 @@
 
       <div class="body-content">
 
-        <!-- ideas come to life banner -->
+        <!-- welcome banner -->
         <div class="welcome-banner">
           <div class="caption">
             <h2>Welcome to Ruff Web development!</h2>
@@ -53,70 +59,92 @@
           </div>
         </div>
         <!-- three icons for Idea, responsive, detail sections-->
-        <div class="c-icon">
-          <img src="" alt="">
-          <p></p>
-        </div>
-        <div class="c-icon">
-          <img src="" alt="">
-          <p></p>
-        </div>
-        <div class="c-icon">
-          <img src="" alt="">
-          <p></p>
-        </div>
+        <div class="icon section">
 
-        <!-- three sections -->
-        <div class="idea-banner">
-          <div class="idea section">
-            <span>Have your ideas come to life</span>
+          <div id="first" class="c-icon">
+            <a href="#your-idea"><img class="ic" src="./images/idea.png" alt="code icon for your ideas"></a>
+            <p class="icon-caption">Your ideas into HTML5</p>
           </div>
-        </div>
-        <div class="description-box">
-          <span>We will work together to acomplish your dream website.</span>
-        </div>
 
-
-        <!-- responsive section -->
-        <div class="resp-banner">
-          <div class="responsive section">
-            <span>Responsive</span>
+          <div id="second" class="c-icon">
+            <a href="#resp"><img class="ic" src="./images/responsive.png" alt="icon for responsive design"></a>
+            <p class="icon-caption">Completely Responsive</p>
           </div>
-        </div>
-        <div class="description-box">
-          <span>We will disign your custom website to be seemlessly responsive
-            for all types of media devices</span>
-        </div>
 
-
-        <!-- atention to detail section -->
-        <div class="detail-banner">
-          <div class="detail section">
-            <span>Attention to detail</span>
+          <div id="third" class="c-icon">
+            <a href="#a-detail"><img class="ic" src="./images/detail.png" alt="icon for attention to detail"></a>
+            <p class="icon-caption">100% atention to detail</p>
           </div>
+
         </div>
-        <div class="description-box">
-          <span>The number one priority is attention to detail</span>
-        </div>
+
+
+
+
+        <!-- three sections container -->
+        <div class="section-container">
+          <!-- idea section   -->
+          <div id="idea" class="idea sections">
+            <h1 class="sec-header">Have your ideas come to life</h1>
+            <div class="sec-banner">
+              <img src="./images/image-one-bw.jpg" alt="man looking at ideas on a board">
+            </div>
+            <div class="description-box">
+              <p>We will work together to acomplish your dream website.</p>
+            </div>
+          </div>
+
+
+
+          <!-- responsive section -->
+          <div id="resp" class="responsive sections">
+            <h1 class="sec-header">Responsive</h1>
+            <div class="sec-banner">
+              <img src="./images/image-two.jpg" alt="Person holding tablet">
+            </div>
+            <div class="description-box">
+              <p>We will disign your custom website to be seemlessly responsive
+                for all types of media devices</p>
+            </div>
+          </div>
+
+
+
+          <!-- atention to detail section -->
+          <div id="detail" class="detail sections">
+            <h1 class="sec-header">Attention to detail</h1>
+            <div class="sec-banner">
+              <img src="./images/image-three.jpg" alt="Hand holding magninying glass">
+            </div>
+            <div class="description-box">
+              <p>The number one priority is attention to detail</p>
+            </div>
+          </div>
+
+        </div><!-- end of section container-->
+
 
         <!-- check me section -->
-        <div class="check-me">
+        <div class="check-me section">
           <h2>Check me out on social media!</h2>
           <ul>
-            <li class="icon fa fa-youtube"><a href="#"></a></li>
-            <li class="icon fa fa-instagram"><a href="#"></a></li>
-            <li class="icon fa fa-linkedin-square"><a href="#"></a></li>
+            <li class="fa fa-youtube fa-3x " aria-hidden="true"><a href="#"></a></li>
+            <li class="fa fa-instagram fa-3x " aria-hidden="true"><a href="#"></a></li>
+            <li class="fa fa-linkedin-square fa-3x " aria-hidden="true"><a href="#"></a></li>
           </ul>
         </div>
+
+      </div><!-- < that div is for the body content start div -->
+    </div>
         <!-- bellow is the footer -->
-        <footer class="desktop-footer">
+        <footer class="desktop-footer section">
           <span class="foot-left">&copy; All rights reserved | RuffWD</span>
           <span class="foot-right"><a href="tomruffcodes@gmail.com">Contact</a></span>
 
         </footer>
 
-      </div>
-    </div>
+
+
 
   </body>
 </html>
